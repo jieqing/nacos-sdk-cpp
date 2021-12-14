@@ -103,7 +103,7 @@ bool NacosConfigService::removeConfigInner
     paramValues.push_back("group");
     paramValues.push_back(parmGroupid);
 
-    if (!isNull(tenant)) {
+    if (!NacosStringOps::isNullStr(tenant)) {
         paramValues.push_back("tenant");
         paramValues.push_back(tenant);
     }
@@ -157,19 +157,19 @@ bool NacosConfigService::publishConfigInner
 
     ParamUtils::addKV(paramValues, "content", content);
 
-    if (!isNull(tenant)) {
+    if (!NacosStringOps::isNullStr(tenant)) {
         ParamUtils::addKV(paramValues, "tenant", tenant);
     }
 
-    if (!isNull(appName)) {
+    if (!NacosStringOps::isNullStr(appName)) {
         ParamUtils::addKV(paramValues, "appName", appName);
     }
 
-    if (!isNull(tag)) {
+    if (!NacosStringOps::isNullStr(tag)) {
         ParamUtils::addKV(paramValues, "tag", tag);
     }
 
-    if (!isNull(betaIps)) {
+    if (!NacosStringOps::isNullStr(betaIps)) {
         ParamUtils::addKV(paramValues, "betaIps", betaIps);
     }
 
@@ -203,7 +203,7 @@ void NacosConfigService::addListener
                 Listener *listener
         ) NACOS_THROW(NacosException) {
     NacosString parmgroup = ConfigConstant::DEFAULT_GROUP;
-    if (!isNull(group)) {
+    if (!NacosStringOps::isNullStr(group)) {
         parmgroup = group;
     }
 
@@ -226,7 +226,7 @@ void NacosConfigService::removeListener
                 Listener *listener
         ) {
     NacosString parmgroup = ConfigConstant::DEFAULT_GROUP;
-    if (!isNull(group)) {
+    if (!NacosStringOps::isNullStr(group)) {
         parmgroup = group;
     }
     log_debug("[NacosConfigService]-removeListener: calling client worker\n");

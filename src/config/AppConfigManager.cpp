@@ -9,7 +9,7 @@
 #include <vector>
 #include <stdlib.h>
 #include "src/log/Logger.h"
-#include "src/utils/ConfigParserUtils.h"
+#include "utils/ConfigParserUtils.h"
 
 using namespace std;
 

@@ -6,7 +6,6 @@
 
 #define NacosString std::string
 #define NULLSTR NacosStringOps::nullstr
-#define isNull NacosStringOps::isNullStr
 
 namespace nacos{
 class NacosStringOps {

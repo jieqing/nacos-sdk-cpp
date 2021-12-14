@@ -5,7 +5,7 @@
 #include "Logger.h"
 #include "utils/TimeUtils.h"
 #include "NacosExceptions.h"
-#include "src/utils/ConfigParserUtils.h"
+#include "utils/ConfigParserUtils.h"
 #include "Properties.h"
 #include "utils/DirUtils.h"
 #include "utils/ParamUtils.h"

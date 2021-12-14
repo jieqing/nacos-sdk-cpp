@@ -14,6 +14,7 @@ class ConfigParserUtils {
 public:
     static Properties parseConfigFile(const NacosString &file) NACOS_THROW(NacosException);
 
+    static Properties parseConfig(const NacosString &fileContent) NACOS_THROW(NacosException);
 };
 
 }

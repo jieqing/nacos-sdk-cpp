@@ -18,7 +18,7 @@
 #include "src/naming/subscribe/UdpNamingServiceListener.h"
 #include "src/naming/subscribe/HostReactor.h"
 #include "src/security/SecurityManager.h"
-#include "src/utils/ConfigParserUtils.h"
+#include "utils/ConfigParserUtils.h"
 #include "src/utils/SequenceProvider.h"
 #include "src/config/ConfigProxy.h"
 #include "utils/DirUtils.h"
