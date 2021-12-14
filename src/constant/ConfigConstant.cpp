@@ -9,7 +9,7 @@
 namespace nacos{
 const NacosString ConfigConstant::DEFAULT_GROUP = "DEFAULT_GROUP";
 const NacosString ConfigConstant::DEFAULT_CONTEXT_PATH = "nacos";
-const NacosString ConfigConstant::PROTOCOL_VERSION = "v1";
+const NacosString ConfigConstant::NACOS_PROTOCOL_VERSION = "v1";
 const NacosString ConfigConstant::GET_SERVERS_PATH = "ns/operator/servers";
 
 const NacosString ConfigConstant::DATAID = "dataId";

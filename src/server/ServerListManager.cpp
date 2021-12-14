@@ -153,7 +153,7 @@ list <NacosServerInfo> ServerListManager::tryPullServerListFromNacosServer() NAC
         try {
             HttpResult serverRes = _objectConfigData->_httpDelegate->httpGet(
                     server.getCompleteAddress() + "/" + ConfigConstant::DEFAULT_CONTEXT_PATH + "/"
-                    + ConfigConstant::PROTOCOL_VERSION + "/" + ConfigConstant::GET_SERVERS_PATH,
+                    + ConfigConstant::NACOS_PROTOCOL_VERSION + "/" + ConfigConstant::GET_SERVERS_PATH,
                     headers, paramValues, NULLSTR, _read_timeout);
             return JSON::Json2NacosServerInfo(serverRes.content);
         }

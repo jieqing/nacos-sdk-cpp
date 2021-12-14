@@ -19,7 +19,7 @@ public:
 
     const static NacosString DEFAULT_CONTEXT_PATH;
 
-    const static NacosString PROTOCOL_VERSION;
+    const static NacosString NACOS_PROTOCOL_VERSION;
 
     const static NacosString GET_SERVERS_PATH;
 
